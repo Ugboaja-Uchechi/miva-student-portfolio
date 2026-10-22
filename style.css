@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 .header {
   background-color: #000;
   color: #fff;
@@ -12,6 +13,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-block-end: 1.5px solid #A1A1A1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .nav ul {
@@ -43,4 +49,72 @@
   color: #FAFAFA;
   text-decoration-color: #FAFAFA;
   text-underline-offset: 8px;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding-block: 10rem;
+  padding-inline: calc(1.5rem + 2.5vw);
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+.home-hero h1 {
+  font-size: calc(2.5rem + 1.5vw);
+}
+
+.home-hero-welcome {
+  max-width: fit-content;
+  color: #A1A1A1;
+}
+
+.home-hero-maintext {
+  font-size: calc(1rem + 1vw);
+  margin-block: .5rem;
+}
+
+.home-hero-subtext {
+  font-size: calc(.5rem + .75vw);
+  margin-block-end: 2rem;
+}
+
+.home-hero-imgcover {
+  place-self: center;
+}
+
+.home-hero-imgcover img {
+  filter: grayscale(1);
+  height: 40%;
+  border-radius: 50%;
+}
+
+.home-hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.home-hero-btns button {
+  padding-inline: 24px;
+  padding-block: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+  font-size: 14px;
+  color: #171717;
+}
+
+.home-hero-btns button:hover {
+  background-color: #262626;
+  border: 1px solid rgba(38, 38, 38, 30%);
+  color: #FAFAFA;
+  cursor: pointer;
+}
+
+.home-sect {
+  background-color: #262626;
 }
