@@ -55,7 +55,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding-block: 10rem;
-  padding-inline: calc(1.5rem + 2.5vw);
+  padding-inline: calc(.5rem + 3.5vw);
   align-items: center;
   background-color: #000;
   color: #fff;
