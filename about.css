@@ -57,7 +57,6 @@
   align-items: center;
   background-color: #000;
   color: #fff;
-  height: 100vh;
 }
 
 .center-wrapper {
@@ -73,7 +72,8 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: 4.5rem;
+  margin-block-start: 4.5rem;
+  margin-block-end: 4rem;
 }
 
 .journey {
@@ -83,7 +83,7 @@
 .journey h2 {
   font-size: 1.5rem;
   color: #FAFAFA;
-  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem;
 }
 
 .journey p {
@@ -102,7 +102,7 @@
 .interest h2 {
   font-size: 1.25rem;
   color: #FAFAFA;
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
 
 .interest-flex {
@@ -123,4 +123,28 @@
   background-color: #FAFAFA;
   color: #000;
   transition: all 0.3s ease-in-out;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.about-grid div {
+  background-color: #262626;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #A1A1A1;
+}
+
+.about-grid h4 {
+  font-size: 1.25rem;
+  color: #FAFAFA;
+  margin-block: 1rem;
+}
+
+.about-grid p {
+  color: #A1A1A1;
+  font-size: 1rem;
 }
