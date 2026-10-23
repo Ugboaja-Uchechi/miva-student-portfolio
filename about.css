@@ -50,3 +50,77 @@
   text-decoration-color: #FAFAFA;
   text-underline-offset: 8px;
 }
+
+.about-hero {
+  padding-block: 10rem;
+  padding-inline: calc(1.5rem + 2.5vw);
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+.center-wrapper {
+  text-align: center;
+}
+
+.center-wrapper p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4.5rem;
+}
+
+.journey {
+  flex: 50%;
+}
+
+.journey h2 {
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  margin-bottom: 1.5rem;
+}
+
+.journey p {
+  color: #A1A1A1;
+  font-size: 1rem;
+}
+
+.interest {
+  flex: 40%;
+  background-color: #262626;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #A1A1A1;
+}
+
+.interest h2 {
+  font-size: 1.25rem;
+  color: #FAFAFA;
+  margin-bottom: 1rem;
+}
+
+.interest-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.interest-flex p {
+  background-color: #000;
+  color: #FAFAFA;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.875rem;
+}
+
+.interest-flex p:hover {
+  background-color: #FAFAFA;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
