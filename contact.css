@@ -59,8 +59,19 @@
   color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
   min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-block-end: 1rem;
+  color: #FAFAFA;
+}
+
+.contact-hero p {
+  color: #A1A1A1;
+  font-size: 1rem;
 }
 
 .contact-form {
@@ -76,7 +87,7 @@
   margin-block-end: 1.5rem;
 }
 
-.form {
+.form-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
@@ -118,6 +129,33 @@ textarea {
   border-radius: 5px;
   background-color: #000;
   color: #FAFAFA;
+}
+
+.form-btn {
+  padding-inline: 24px;
+  padding-block: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+  font-size: 14px;
+  color: #171717;
+  width: 100%;
+  margin-block-start: 1rem;
+}
+
+.form-btn:hover {
+  background-color: #000;
+  color: #FAFAFA;
+  border: 1px solid #FAFAFA;
+  cursor: pointer;
+}
+
+.err-msg {
+  text-align: center;
+  color: #ff2525;
+  margin-block: .5rem;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1410px) {
