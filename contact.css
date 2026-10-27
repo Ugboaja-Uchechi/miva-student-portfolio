@@ -151,11 +151,17 @@ textarea {
   cursor: pointer;
 }
 
-.err-msg {
+.err-msg-cover .err-msg {
   text-align: center;
   color: #ff2525;
   margin-block: .5rem;
   font-size: 14px;
+}
+
+.form-cover .email-err {
+  color: #ff2525;
+  font-size: 14px;
+  margin-block-start: .5rem;
 }
 
 @media screen and (max-width: 1410px) {
