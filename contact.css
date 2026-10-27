@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-block-end: 1.5px solid #A1A1A1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #A1A1A1;
+  padding-inline: 12px;
+  padding-block: 8px;
+  margin-inline-end: 32px;
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+}
+
+.nav-link:last-child {
+  margin-inline-end: 0;
+}
+
+.nav-link:hover {
+  color: #FAFAFA;
+}
+
+.nav-link:active {
+  text-decoration: underline;
+  color: #FAFAFA;
+  text-decoration-color: #FAFAFA;
+  text-underline-offset: 8px;
+}
+
+.contact-hero {
+  padding-block-start: 10rem;
+  padding-block-end: 5rem;
+  padding-inline: calc(.5rem + 3.5vw);
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.contact-form {
+  background-color: #121212;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #A1A1A1;
+}
+
+.contact-form h2 {
+  color: #FAFAFA;
+  font-size: 1.25rem;
+  margin-block-end: 1.5rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.form-cover {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: .75rem;
+}
+
+label {
+  font-size: 0.875rem;
+  margin-block-end: 0.5rem;
+  color: #FAFAFA;
+}
+
+.form input {
+  border: 1px solid #A1A1A1;
+  outline: none;
+  width: 100%;
+  padding-inline: .75rem;
+  padding-block: .5rem;
+  border-radius: 5px;
+  background-color: #000;
+  color: #FAFAFA;
+}
+
+.textarea-cover {
+  grid-column: 1 / span 2;
+}
+
+textarea {
+  border: 1px solid #A1A1A1;
+  outline: none;
+  width: 100%;
+  padding-inline: .75rem;
+  padding-block: .5rem;
+  border-radius: 5px;
+  background-color: #000;
+  color: #FAFAFA;
+}
+
+@media screen and (max-width: 1410px) {
+  .textarea-cover {
+    grid-column: 1 / span 1;
+  }
+}

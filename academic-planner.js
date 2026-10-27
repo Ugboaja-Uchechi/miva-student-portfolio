@@ -12,6 +12,11 @@ const addTask = () => {
 
   const taskItem = document.createElement("li");
 
+    // Create tick
+  const tick = document.createElement("span");
+  tick.textContent = "✔️"
+  taskItem.appendChild(tick);
+
   const taskText = document.createElement("span");
   taskText.textContent = taskValue;
   taskItem.appendChild(taskText);
@@ -21,6 +26,7 @@ const addTask = () => {
   deleteBtn.textContent = 'X';
   deleteBtn.classList.add('delete-btn');
   taskItem.appendChild(deleteBtn);
+
 
   // Feature A: Toggle completion when clicking the task text
   taskText.addEventListener('click', () => {
