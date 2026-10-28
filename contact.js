@@ -4,21 +4,42 @@ let errCover = document.querySelector(".err-msg-cover");
 let form = document.querySelector("form");
 let emailErr = document.querySelector(".email-err");
 let emailInput = document.querySelector("#email");
-
-const validateEmail = (email) => {
-
-  if (emailInput.value !== "" && !regex.test(emailInput.value)) {
-    emailErr.textContent = "Please enter a valid email address";
-  }
-
-}
+let telInput = document.querySelector("#phone");
+let telErr = document.querySelector(".tel-err");
 
 
 formBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
+  let isValid = true;
+
+  //email validation
   const regex = /^[a-zA-Z0–9._-]+@[a-zA-Z0–9.-]+\.[a-zA-Z]{2,4}$/;
-  const emailValue = emailInput.value.trim();
+  const emailValue = emailInput.value;
+
+  if (!regex.test(emailValue)) {
+    emailErr.textContent = "Please enter a valid email address.";
+    isValid = false;
+  } else {
+    emailErr.textContent = "";
+    isValid = true;
+  }
+
+  //email validation end
+
+  //phone number validation
+  const telRegex = /^\d+$/;
+  const telValue = telInput.value;
+
+  if (!telRegex.test(telValue)) {
+    telErr.textContent = "Please enter a valid phone number.";
+    isValid = false;
+  } else {
+    telErr.textContent = "";
+    isValid = true;
+  }
+
+  //phone number validation end
 
   // Remove the old error message if it exists
   const existingErr = form.querySelector(".err-msg");
@@ -42,17 +63,12 @@ formBtn.addEventListener("click", (e) => {
     errorMsg.textContent = "Please fill out all inputs";
     errorMsg.classList.add("err-msg");
     errCover.appendChild(errorMsg);
-  } else {
+  } else if (isValid) {
     formInputs.forEach(input => {
       input.value = "";
     });
+  } else {
+    console.log("Form has validation errors.");
   }
 
- if (!regex.test(emailValue)) {
-    emailErr.textContent = "Please enter a valid email address.";
-    isValid = false;
-  } else {
-    emailErr.textContent = "";
-    isValid = true;
-  }
-});r
+});
