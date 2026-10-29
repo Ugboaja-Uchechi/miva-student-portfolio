@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 .header {
   background-color: #000;
@@ -69,6 +72,124 @@
   display: none;
 }
 
+.project-hero {
+  padding-block-start: 10rem;
+  padding-block-end: 5rem;
+  padding-inline: calc(.5rem + 3.5vw);
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.project-center-wrapper {
+  text-align: center;
+}
+
+.project-center-wrapper h1 {
+  font-size: 2rem;
+  color: #FAFAFA;
+  margin-block-end: .5rem;
+}
+
+.project-center-wrapper p {
+  min-width: 50%;
+  margin: 0 auto;
+  color: #A1A1A1;
+  font-size: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+  margin-block-start: 4.5rem;
+  margin-block-end: 4rem;
+  padding-block-end: 4rem;
+}
+
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #121212;
+  border-radius: 10px;
+  border: 1px solid #A1A1A1;
+}
+
+.project-img-cover {
+  flex: 55%;
+}
+
+.project-flex img {
+  width: 100%;
+  height: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.project-text-cover {
+  flex: 45%;
+  place-self: center;
+  padding: 2rem;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  color: #FAFAFA;
+  margin-block-end: .5rem;
+}
+
+.project-description {
+  color: #A1A1A1;
+  font-size: 1rem;
+  margin-block-end: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block-end: 1.5rem;
+
+}
+
+.project-tag {
+  background-color: #000;
+  color: #FAFAFA;
+  padding: 0.5rem 1.75rem;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-tag:hover {
+  background-color: #262626;
+  color: #FAFAFA;
+}
+
+.btn-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-flex button {
+  padding-inline: 30px;
+  padding-block: 8px;
+  background-color: #FAFAFA;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+  font-size: 14px;
+  color: #171717;
+}
+
+.btn-flex button:hover {
+  background-color: #262626;
+  border: 1px solid rgba(38, 38, 38, 30%);
+  color: #FAFAFA;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .mobile-menu {
     display: block;
@@ -115,5 +236,10 @@
 
   .nav-ul {
     display: none;
+  }
+
+  .project-flex {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
