@@ -1,17 +1,17 @@
 const projectContainer = document.querySelector(".project-grid");
 
 const ProjectData = [
+  // {
+  //   id: 1,
+  //   name: "DOPE",
+  //   description: "A production ready chrome extension that gamifies learning experience and connect users to a vibrant community of learners.",
+  //   img: "./images/dope.png",
+  //   tags: ["React", "Vite", "TypeScript", "Tailwind", "CSS"],
+  //   link1: "#",
+  //   link2: "#"
+  // },
   {
     id: 1,
-    name: "DOPE",
-    description: "A production ready chrome extension that gamifies learning experience and connect users to a vibrant community of learners.",
-    img: "./images/dope.png",
-    tags: ["React", "Vite", "TypeScript", "Tailwind", "CSS"],
-    link1: "#",
-    link2: "#"
-  },
-  {
-    id: 2,
     name: "Automagic Agency Site",
     description: "Built a production-ready website for an agency using Next.js, Tailwind CSS, and Framer Motion.",
     img: "./images/automagic-portfolio.png",
@@ -20,7 +20,7 @@ const ProjectData = [
     link2: "#"
   },
   {
-    id: 3,
+    id: 2,
     name: "REST Countries API",
     description: "REST Countries API is a web app that allows users to see all countries and their details when clicked.",
     img: "./images/countries.png",
@@ -29,7 +29,7 @@ const ProjectData = [
     link2: "https://allcountry.vercel.app/"
   },
   {
-    id: 4,
+    id: 3,
     name: "Dictionary web app",
     description: "Search for words using the input field, play the audio file for a word when it's available, switch between available fonts",
     img: "./images/dictionary.png",

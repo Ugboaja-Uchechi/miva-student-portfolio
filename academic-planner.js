@@ -12,14 +12,37 @@ const addTask = () => {
 
   const taskItem = document.createElement("li");
 
-    // Create tick
-  const tick = document.createElement("span");
-  tick.textContent = "✔️"
-  taskItem.appendChild(tick);
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+
+  const taskLabel = document.createElement("label");
+  taskLabel.classList.add("ios-checkbox", "red");
+
+  const checkboxWrapper = document.createElement("span");
+  checkboxWrapper.classList.add("checkbox-wrapper");
+
+  const checkboxBackground = document.createElement("span");
+  checkboxBackground.classList.add("checkbox-bg");
+
+  const checkboxIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  checkboxIcon.classList.add("checkbox-icon");
+  checkboxIcon.setAttribute("viewBox", "0 0 24 24");
+  checkboxIcon.setAttribute("fill", "none");
+
+  const checkPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  checkPath.classList.add("check-path");
+  checkPath.setAttribute("d", "M4 12L10 18L20 6");
+  checkPath.setAttribute("stroke", "currentColor");
+  checkPath.setAttribute("stroke-width", "3");
+  checkPath.setAttribute("stroke-linecap", "round");
+  checkPath.setAttribute("stroke-linejoin", "round");
+  checkboxIcon.appendChild(checkPath);
+  checkboxWrapper.append(checkboxBackground, checkboxIcon);
 
   const taskText = document.createElement("span");
   taskText.textContent = taskValue;
-  taskItem.appendChild(taskText);
+  taskLabel.append(checkbox, checkboxWrapper, taskText);
+  taskItem.appendChild(taskLabel);
 
   // Create the Delete button inside the <li>
   const deleteBtn = document.createElement('button');
@@ -28,9 +51,8 @@ const addTask = () => {
   taskItem.appendChild(deleteBtn);
 
 
-  // Feature A: Toggle completion when clicking the task text
-  taskText.addEventListener('click', () => {
-    taskText.classList.toggle('completed');
+  checkbox.addEventListener("change", () => {
+    taskText.classList.toggle("completed", checkbox.checked);
   });
 
   // Feature B: Remove the item entirely when clicking the delete button
