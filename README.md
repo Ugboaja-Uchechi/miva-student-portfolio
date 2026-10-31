@@ -4,7 +4,7 @@ This is my Miva portfolio project built using HTML, CSS, and JS.
 
 ## Live Demo Link
 
-[Netlify](https://stephanies-portfolio.netlify.app/)
+[Link](https://ugboaja-uchechi.github.io/miva-student-portfolio/index.html)
 
 ## Screenshot
 
