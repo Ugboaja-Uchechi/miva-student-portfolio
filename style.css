@@ -58,6 +58,18 @@ body {
   text-underline-offset: 8px;
 }
 
+.home {
+  color: #A1A1A1;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.home:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: #FAFAFA;
+}
+
 .home-hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -126,6 +138,38 @@ body {
 
 .home-sect {
   background-color: #262626;
+  padding-block: 80px;
+  padding-inline: calc(.5rem + 3.5vw);
+}
+
+.home-sect h2 {
+  color: #FAFAFA;
+  font-size: 1.5rem;
+  margin-block-end: 1.5rem;
+}
+
+.home-sect p {
+  font-size: 1rem;
+  color: #A1A1A1;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.home-grid video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-grid h4 {
+  color: #A1A1A1;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-block-start: .75rem;
 }
 
 .mobile-nav {

@@ -23,6 +23,18 @@ body {
   z-index: 10;
 }
 
+.home {
+  color: #A1A1A1;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.home:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: #FAFAFA;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -119,7 +131,7 @@ body {
 }
 
 .add-task-btn:hover {
-  background-color: #262626;
+  background-color: #26a80a;
   color: #FAFAFA;
   cursor: pointer;
 }
@@ -144,7 +156,7 @@ body {
   border-radius: 8px;
   border: 3px solid transparent;
   background-clip: content-box;
-  background-color: #d55959;
+  background-color: #62ef44;
 }
 
 .task-list li {
@@ -167,13 +179,13 @@ body {
   padding-inline: 20px;
   padding-block: 4px;
   background-color: #FAFAFA;
-  border: 1px solid #a1a1a1;
+  border: none;
   border-radius: 8px;
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
 .delete-btn:hover {
-  background-color: #262626;
+  background-color: #e9261b;
   color: #FAFAFA;
   cursor: pointer;
 }
@@ -280,9 +292,9 @@ body {
 }
 
 .ios-checkbox.red {
-  --checkbox-color: #ef4444;
-  --checkbox-bg: #fee2e2;
-  --checkbox-border: #fca5a5;
+--checkbox-color: #62ef44;
+    --checkbox-bg: #e2fee5;
+    --checkbox-border: #a6fca5;
 }
 
 /* Animation */

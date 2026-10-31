@@ -58,6 +58,18 @@ body {
   text-underline-offset: 8px;
 }
 
+.home {
+  color: #A1A1A1;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.home:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: #FAFAFA;
+}
+
 .academic-hero {
   padding-block-start: 10rem;
   padding-block-end: 5rem;
