@@ -52,7 +52,9 @@ body {
   color: #FAFAFA;
 }
 
-.nav-link:active {
+.nav-link:active,
+.nav-link[aria-current="page"],
+.mobile-nav-link[aria-current="page"] {
   text-decoration: underline;
   color: #FAFAFA;
   text-decoration-color: #FAFAFA;
@@ -119,18 +121,20 @@ body {
   gap: 16px;
 }
 
-.home-hero-btns button {
+.home-hero-btns a {
   padding-inline: 24px;
   padding-block: 10px;
   background-color: #FAFAFA;
   border: 1px solid #a1a1a1;
   border-radius: 8px;
+  font-weight: 500;
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border 0.4s ease-in-out;
   font-size: 14px;
   color: #171717;
+  text-decoration: none;
 }
 
-.home-hero-btns button:hover {
+.home-hero-btns a:hover {
   background-color: #262626;
   border: 1px solid rgba(38, 38, 38, 30%);
   color: #FAFAFA;

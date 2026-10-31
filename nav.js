@@ -1,7 +1,17 @@
 const menuIcon = document.querySelector(".mobile-menu");
 const container = document.querySelector(".mobile-nav");
 const closeIcon = document.querySelector(".close-icon");
-//const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+const navLinks = document.querySelectorAll(".nav-link, .mobile-nav-link");
+
+const currentPath = window.location.pathname.endsWith("/")
+  ? `${window.location.pathname}index.html`
+  : window.location.pathname;
+
+navLinks.forEach(link => {
+  if (link.pathname === currentPath) {
+    link.setAttribute("aria-current", "page");
+  }
+});
 
 // Mobile menu
 function openBar() {
